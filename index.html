@@ -1,33 +1,14 @@
- <html>
-    <head>
-    <title>
-    Login page
-    </title>
-    </head>
-    <body>
-    <h1 style="font-family:Comic Sans Ms;text-align="center";font-size:20pt;
-    color:#00FF00;>
-<MARQUEE>WWW.BOOKS.COM</MARQUEE>
-    </h1>
-    <form name="login">
-    Username<input type="text" name="userid"/>
-    Password<input type="password" name="pswrd"/>
-    <input type="button" onclick="check(this.form)" value="Login"/>
-    <input type="reset" value="Cancel"/>
-    </form>
-    <script language="javascript">
-    function check(form)/*function to check userid & password*/
-    {
-    /*the following code checkes whether the entered userid and password are matching*/
-    if(form.userid.value == "myuserid" && form.pswrd.value == "mypswrd")
-    {
-    window.open('target.html')/*opens the target page while Id & password matches*/
-    }
-    else
-    {
-    alert("Error Password or Username")/*displays error message*/
-    }
-    }
-    </script>
-    </body>
-    </html>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="C7A65AKBKXRT2">
+<table>
+<tr><td><input type="hidden" name="on0" value="How friendly are you?">How friendly are you?</td></tr><tr><td><select name="os0">
+	<option value="Friendly">Friendly $0.99 USD</option>
+	<option value="Very Friendly">Very Friendly $9.89 USD</option>
+	<option value="Friendliest">Friendliest $24.89 USD</option>
+</select> </td></tr>
+</table>
+<input type="hidden" name="currency_code" value="USD">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynowCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
